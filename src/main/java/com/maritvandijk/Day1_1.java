@@ -5,12 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-// Solution for day 1, puzzle 1
 public class Day1_1 {
     public static void main(String[] args) throws IOException {
         List<Integer> left = new ArrayList<>();
         List<Integer> right = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("day1_1.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("day1.txt"))) {
             reader.lines().map(line -> line.split("   ")).forEach(ids -> {
                 left.add(Integer.valueOf(ids[0]));
                 right.add(Integer.valueOf(ids[1]));
